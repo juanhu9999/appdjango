@@ -6,4 +6,5 @@ urlpatterns = [
     path('cursos', cursos,name="cursos"),
     path('estudiantes', estudiantes, name="estudiantes"),
     path("curso_formulario", curso_formulario, name="curso_formulario"),
+    path("form-con-api/", views.form_con_api, name"form_api")
 ]
