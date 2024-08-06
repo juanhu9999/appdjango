@@ -1,0 +1,18 @@
+{% extends 'app_uno/base.html' %}
+
+{% load static %}
+
+{% block title %} Formulario - agregar curso {% endblock title %}
+
+{% block main %}
+
+<form action= "{% url 'curso_formulario' %}" method="POST">
+{% csrf_token %}
+<p>Curso: <input type="text" name="curso"></p>
+<p>Comision: <input type="text" name="comision"></p>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+{% endblock main %}
