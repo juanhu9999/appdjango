@@ -26,7 +26,7 @@ def curso_formulario(request):
 
 def form_api(request):
     if request.method == "POST":
-        mi_formulario = CursoFormulario(request.POST)
+        mi_formulario = curso_formulario(request.POST)
 
         if mi_formulario.is_valid():
             informacion = mi_formulario.cleaned_data
